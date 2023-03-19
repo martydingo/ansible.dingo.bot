@@ -1,3 +1,6 @@
-- name: debug facts
-  debug:
-    msg: "{{ ansible_facts }}"
+---
+- hosts: all
+  tasks:
+    - name: debug facts
+      debug:
+        msg: "{{ ansible_facts }}"
